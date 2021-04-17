@@ -17,7 +17,7 @@ async function list(req, res, next) {
   res.status(201).json({ data });
 }
 
-async function read(req, res, next) {
+function read(req, res, next) {
   const { movie } = res.locals;
   res.json({ data: movie });
 }

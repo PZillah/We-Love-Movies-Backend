@@ -19,7 +19,7 @@ async function list(req, res, next) {
   res.status(201).json({ data });
 }
 
-async function read(req, res, next) {
+function read(req, res, next) {
   const { review } = res.locals;
   res.json({ data: review });
 }
