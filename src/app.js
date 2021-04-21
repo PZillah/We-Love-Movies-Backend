@@ -8,7 +8,7 @@ const moviesRouter = require('./movies/movies.router');
 const theatersRouter = require('./theaters/theaters.router');
 const reviewsRouter = require('./reviews/reviews.router');
 
-app.use(cors());
+app.use(cors({origin: `https://project-we-love-movies-1-pzillah.vercel.app`})); // whitelist instead of installing CORS chrome extension
 app.use(express.json());
 
 app.use("/movies", moviesRouter);
